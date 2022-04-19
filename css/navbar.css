@@ -1,0 +1,34 @@
+.navbar{
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+}
+
+.marginbutton{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.backgroundcolor{
+    background-color: #a10707;
+}
+.navbar a{
+    color: #fff;
+}
+
+.navbar .menu{
+    grid-column: 3/8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-bar{
+    display: none;
+}
+
+.menu-bar-ul ul{
+    display: none;
+}
+
+.navbar .login{
+    grid-column: 10/11;
+    cursor: pointer;
+}
