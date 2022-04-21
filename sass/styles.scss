@@ -1,10 +1,19 @@
+//var
+$color-white:#fff;
+$font:font-family: 'Bebas Neue', cursive;
+//import
+@import "color"
+@import "font"
+
+
 h1{
     display: flex;
     text-align: center; font-size: 80px; 
     text-shadow: black;  
     margin: 0px; 
     padding: 0px; 
-    display: inline;}
+    display: inline;
+}
 
 img{
     border: 2px solid #a10707;
@@ -24,9 +33,11 @@ iframe{
     height: 90%;
 }
 
-.principal-news img{
-    width: 100%;
-    height: 400px;
+.principal-news{
+    img{
+        width: 100%;
+        height: 400px;
+    }
 }
 
 .principal-news{
@@ -34,17 +45,23 @@ iframe{
 }
 
 
-.principal-news h2{
-    display: block;
-    margin: auto;
+.principal-news{
+    h2{
+        display: block;
+        margin: auto;
+    }
 }
 
-.noticias-secundarias img{
-    width: 400px;
+.noticias-secundarias{
+    img{
+        width: 400px;
+    }
 }
 
-.noticias-secundarias h2{
-    font-size: 30px;
+.noticias-secundarias{
+    h2{
+        font-size: 30px;
+    }
 }
 
 
@@ -57,12 +74,12 @@ p{
 
 button{ 
     font-family: 'Courier New', Courier, monospace; 
-    color: #ffffff ;
+    color: $color-white;
     background-color: black; 
     border: none;}
 
 .fuenteTitulos{
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font;
 }
 
 .gridInicio{
@@ -78,14 +95,14 @@ button{
 }
 
 .fuenteTitulos-1{
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font;
     margin-bottom: 0%;
     padding-bottom: 0%;
 }
 
 
 .carteleraTitulos{
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font;
     margin-top: 0%;
     margin-bottom: 60px;
 }
@@ -101,9 +118,11 @@ button{
     display:inline-block
 }
 
-.grid-container img{
-    margin: 10px;
-    justify-content: center;
+.grid-container {
+    img{
+        margin: 10px;
+        justify-content: center;
+    }
 }
 
 .grid-container {
@@ -113,22 +132,31 @@ button{
     grid-row-gap: 5px;
 }
 
-.grid-container div{
-    grid-column: 1/4;
+.grid-container{
+    div{
+        grid-column: 1/4;
+    }
 }
 
-.mb-3 input{
-    width: 300px;
+.mb-3{
+    input{
+        width: 300px;
+    }
 }
-.form-check input{
-    width: 17px;
+.form-check{
+    input{
+        width: 17px;
+    }
 }
-.d-md-block h5{
-    color: #fff;
+.d-md-block{
+    h5{
+        color: $color-white;
+    }
+    p{
+        color: $color-white;
+    }
 }
-.d-md-block p{
-    color: #fff;
-}
+
 *{
     color: #000000;
     margin: 0%;
@@ -144,7 +172,7 @@ h2{
 
 .sizetrailer{
     font-size:25px; 
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font;
     margin-bottom: 0%;
     padding-bottom: 0%;
     margin-top: 9px;
@@ -153,7 +181,7 @@ h2{
 
 .sizetrailer-principal{
     font-size:50px; 
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font;
     margin-bottom: 0%;
     padding-bottom: 0%;
     margin-top: 9px;
@@ -162,7 +190,7 @@ h2{
 
 label{
     display: block; 
-    font-family: 'Bebas Neue', cursive;}
+    font-family: $font;}
 
 .formbuttons{ 
     background-color: black;}
@@ -180,7 +208,7 @@ input{
 
 
 .footer{
-    color: #ffffff;
+    color: $color-white;
     width: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgb(86, 86, 86) 0%, rgb(255, 255, 255) 45%, rgb(86, 86, 86) 100%);
@@ -188,18 +216,20 @@ input{
 
 .footer-responsive{
     display: none;
-    color: #ffffff;
+    color: $color-white;
     background-color: rgb(190, 190, 190);
 }
 
-.footer h4{
-    font-family:'Bebas Neue', cursive;
-    color: #000000;
+.footer{
+    h4{
+        font-family:$font;
+        color: #000000;
+    }
 }
 
-.footer-responsive h4{
-    font-size: 10px;
-    font-family:'Bebas Neue', cursive; 
+.footer-responsive {
+    h4{
+        font-size: 10px;
+        font-family:$font;
+    }
 }
-
-/*# sourceMappingURL=style.css.map */
