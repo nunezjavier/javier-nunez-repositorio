@@ -7,18 +7,6 @@
     margin-left: 6px;
     margin-right: 6px;
 }
-.backgroundcolor{
-    background-color: #a10707;
-}
-.navbar a{
-    color: #fff;
-}
-
-.navbar .menu{
-    grid-column: 3/8;
-    display: flex;
-    justify-content: space-around;
-}
 
 .menu-bar{
     display: none;

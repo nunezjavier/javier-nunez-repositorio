@@ -5,9 +5,6 @@ h1 {
   text-align: center;
   font-size: 80px;
   text-shadow: black;
-  margin: 0px;
-  padding: 0px;
-  display: inline;
 }
 
 img {
@@ -59,14 +56,14 @@ p {
 }
 
 button {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New";
   color: #fff;
   background-color: black;
   border: none;
 }
 
 .fuenteTitulos {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .gridInicio {
@@ -90,13 +87,13 @@ button {
 }
 
 .fuenteTitulos-1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
 
 .carteleraTitulos {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   margin-top: 0%;
   margin-bottom: 60px;
 }
@@ -166,9 +163,9 @@ h2 {
   font-size: 40px;
 }
 
-.sizetrailer {
+.sizetrailer, .sizetrailer-principal {
   font-size: 25px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   margin-bottom: 0%;
   padding-bottom: 0%;
   margin-top: 9px;
@@ -177,16 +174,11 @@ h2 {
 
 .sizetrailer-principal {
   font-size: 50px;
-  font-family: 'Bebas Neue', cursive;
-  margin-bottom: 0%;
-  padding-bottom: 0%;
-  margin-top: 9px;
-  padding-top: 4px;
 }
 
 label {
   display: block;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
 .formbuttons {
@@ -220,12 +212,12 @@ input {
 }
 
 .footer h4 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: #000000;
 }
 
 .footer-responsive h4 {
   font-size: 10px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 /*# sourceMappingURL=styles.css.map */

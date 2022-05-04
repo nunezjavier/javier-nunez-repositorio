@@ -1,18 +1,28 @@
 //var
 $color-white:#fff;
-$font:font-family: 'Bebas Neue', cursive;
+$font:'Bebas Neue', cursive; 
 //import
-@import "color"
-@import "font"
 
+//Maps
+$trailer:(
+    margin-b:0%,
+    padding-b: 0%,
+    margin-t: 9px,
+    padding-t: 4px,
+);
 
+//mixin
+@mixin button($fontt,$f-color,$b-color, $border ) {
+    font-family: $fontt; 
+    color: $f-color;
+    background-color: $b-color; 
+    border: $border;
+}
 h1{
     display: flex;
-    text-align: center; font-size: 80px; 
+    text-align: center; 
+    font-size: 80px; 
     text-shadow: black;  
-    margin: 0px; 
-    padding: 0px; 
-    display: inline;
 }
 
 img{
@@ -73,10 +83,8 @@ p{
     font-family: 'Barlow', sans-serif;}
 
 button{ 
-    font-family: 'Courier New', Courier, monospace; 
-    color: $color-white;
-    background-color: black; 
-    border: none;}
+    @include button('Courier New', $color-white, black, none )
+}
 
 .fuenteTitulos{
     font-family: $font;
@@ -170,22 +178,21 @@ h3{
 h2{
     font-size: 40px;}
 
+
+
 .sizetrailer{
     font-size:25px; 
     font-family: $font;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
-    margin-top: 9px;
-    padding-top: 4px;
+    margin-bottom:map-get($map:$trailer, $key:margin-b);
+    padding-bottom: map-get($map:$trailer, $key:padding-b );
+    margin-top: map-get($map: $trailer, $key:margin-t );
+    padding-top: map-get($map: $trailer, $key:padding-t );
+    
 }
 
 .sizetrailer-principal{
-    font-size:50px; 
-    font-family: $font;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
-    margin-top: 9px;
-    padding-top: 4px;
+    @extend .sizetrailer;
+    font-size: 50px;
 }
 
 label{

@@ -2,10 +2,15 @@
     .navbar{
         display: none;
     }
-    .principal-news h2{
-        font-size: 15px;
+    .principal-news img{
+        height: 150px;
     }
-    
+    .h2index{
+        font-size: 19px;
+    }
+    .flex-trailers{
+        flex-wrap: wrap;
+    }
     .flexTDP{
         flex-wrap: wrap;
     }
@@ -13,18 +18,11 @@
         display: grid;
         grid-column: 10/11;
     }
-    .noticias-secundarias img{
-        width: auto;
-        height: 50px;
-    }
-    .noticias-secundarias h2{
-        font-size: 15px;
-    }
     footer{
         display: none;
     }
     .footer-responsive{
-        display: flex;
+        display: none;
     }
     .gridCartelera{
         display: grid;
@@ -51,8 +49,10 @@
     h1{
         font-size: 30px;
     }
-    .sizetrailer{
-        font-size: 20px;
+    .gridInicio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .noticias-secundarias{
         display: flex;
@@ -63,5 +63,16 @@
     }
     .d-flex button{
         display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    .inicio-nuevo{
+        flex-wrap: wrap;
+    }
+    .d-flex input{
+        display:none;
+    }
+    .d-flex button{
+        display:none;
     }
 }
